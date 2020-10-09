@@ -1,0 +1,79 @@
+.header{
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $black;
+    .down-triangles{
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        margin-left: -3.5px;
+        bottom: 50px;
+        .down-triangle{
+            border-top: 7.5px solid $yellow;
+            border-right: 7.5px solid transparent;
+            border-left: 7.5px solid transparent;
+            margin-top: 7.5px;
+        }
+    }
+    .border-overlay {
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        -webkit-box-shadow:inset 0px 0px 0px 15px $white;
+        -moz-box-shadow:inset 0px 0px 0px 15px $white;
+        box-shadow:inset 0px 0px 0px 15px $white;
+        z-index: 4;
+        @include media('<=phone'){
+            display: none;
+        }
+        .boxes-container{
+            position: absolute;
+            top :30px;
+            left: 5px;
+            .box{
+                width: 6.5px;
+                height: 6.5px;
+                border-radius: 100%;
+                background-color: $yellow;
+                margin-bottom: 6.5px;
+            }
+        }
+        .border-overlay-line{
+            width: 30px;
+            height: 3.5px;
+            background-color: $yellow;
+            position: absolute;
+            bottom: 7.5px;
+            right: 40px;
+        }
+    }
+    .my-info{
+        .name{
+            font-size: 4rem;
+            @include media('<=tablet'){
+                font-size: 4rem;
+            }
+            @include media('<=phone'){
+                font-size: 2.5rem;
+            }
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: .2rem;
+            @include media('<=phone'){
+                font-size:.9rem;
+                letter-spacing: .1rem;
+            }
+        }
+    }
+}
