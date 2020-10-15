@@ -59,3 +59,8 @@ button:hover {
     box-shadow: 0 2px 0 $black;
     font-weight: 600;
 }
+
+#__react-alert__ span{
+    color: $white;
+    text-transform: none;
+}
