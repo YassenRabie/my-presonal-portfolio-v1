@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal'
-
+import { ReactComponent as Close } from '../assets/close.svg'
 const ProjectModal = ({ astronomyModalOpen, CloseAstronomyModal, currentProject }) => {
 
     return (
@@ -11,6 +11,7 @@ const ProjectModal = ({ astronomyModalOpen, CloseAstronomyModal, currentProject 
                 closeTimeoutMS={250}
                 className="modal"
             >
+                <div className="close-icon-container" onClick={CloseAstronomyModal}><Close className="icon" /></div>
                 <div className="modal-content">
                     <div className="project-image" style={{ backgroundImage: `url(${currentProject.image})` }}></div>
                     <div className="project-info">
@@ -22,7 +23,7 @@ const ProjectModal = ({ astronomyModalOpen, CloseAstronomyModal, currentProject 
                             <h4>Technology</h4>
                             <p>{currentProject.usedTools}</p>
                         </div>
-                        <a href="https://yassenrabie.github.io/doINeedACat/" target="_target">Visit the website</a>
+                        <a href={currentProject.url} target="_target">Visit the website</a>
                     </div>
                 </div>
             </Modal>

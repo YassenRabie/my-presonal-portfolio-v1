@@ -46,9 +46,16 @@ const Mywork = () => {
     const projectsInfo = [
         {
             image: "./assets/projects/project1.jpg",
-            description: "Thinking of getting a cat? this is the site for you.",
-            usedTools: "HTML, CSS, JS, REACT JS, Adobe XD"
+            description: "Do i need a cat, is a site for people who are thinking of getting a cat.",
+            usedTools: "HTML, CSS, JS, REACT JS, Adobe XD",
+            url: "https://yassenrabie.github.io/doINeedACat/"
+        }, {
+            image: "./assets/projects/project2.jpg",
+            description: "What To Watch, is a site to search for a movie to watch",
+            usedTools: "HTML, CSS, JS, REACT JS, Adobe XD, TMDB API",
+            url: "https://yassen-wtw.netlify.app/"
         }
+
     ]
 
     return (
@@ -66,10 +73,9 @@ const Mywork = () => {
                 </div>
                 <div className="projects-container">
                     <div className="project" style={{ backgroundImage: `url(${projectsInfo[0].image})` }} onClick={() => ShowAstronomyModal(projectsInfo[0])}><div className="hover-effect"><p>View project</p></div></div>
+                    <div className="project" style={{ backgroundImage: `url(${projectsInfo[1].image})` }} onClick={() => ShowAstronomyModal(projectsInfo[1])}><div className="hover-effect"><p>View project</p></div></div>
                     <div className="project"><p>Coming Soon</p></div>
                     <div className="project"><p>Coming Soon</p></div>
-                    <div className="project"><p>Coming Soon</p></div>
-
                 </div>
             </div>
         </div>
