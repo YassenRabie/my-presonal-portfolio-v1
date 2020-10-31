@@ -59,7 +59,7 @@ const Mywork = () => {
     ]
 
     return (
-        <div className="my-work">
+        <div className="my-work" id="my-work">
             <div className="triangles-effect">
                 <div className="tr"></div>
                 <div className="tr"></div>

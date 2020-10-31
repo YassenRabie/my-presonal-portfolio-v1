@@ -9,12 +9,12 @@
         position: absolute;
         display: flex;
         left: 50%;
-        margin-left: -45px;
+        margin-left: -36px;
         gap: 15px;
         .tr{
-            border-top: 10px solid $yellow;
-            border-right: 10px solid transparent;
-            border-left: 10px solid transparent;
+            border-top: 7px solid $yellow;
+            border-right: 7px solid transparent;
+            border-left: 7px solid transparent;
         }
     }
     .container{
@@ -54,19 +54,20 @@
             }
         }  
         .projects-container{
-            display: grid;
+            display: grid;  
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             justify-content: center;
             align-content: center;
             flex-wrap: wrap;
+            margin-bottom: 10rem;
             @include media('<=tablet'){
                 display: flex;
             }
             .project{
                 margin: 2rem;
-                width: 20rem;
-                height: 11.2rem;
+                width: 17rem;
+                height: 10rem;
                 background-color: $blue;
                 color: $black;
                 display: flex;
@@ -76,6 +77,7 @@
                 font-size: 1rem;
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-position: center;
                 overflow: hidden;
                 cursor: pointer;
                 border: 1px solid lightgray;

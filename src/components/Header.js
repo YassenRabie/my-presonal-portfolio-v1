@@ -37,12 +37,13 @@ const Header = () => {
                 <div className="down-triangle"></div>
                 <div className="down-triangle"></div>
             </div>
+            <div className="boxes-container">
+                <a href="#about-me"><div className="box"></div><span>About Me</span></a>
+                <a href="#what-i-use"><div className="box"></div><span>What I use</span></a>
+                <a href="#my-work"><div className="box"></div><span>My Work</span></a>
+                <a href="#contact-me"><div className="box"></div><span>Contact Me</span></a>
+            </div>
             <div className="border-overlay">
-                <div className="boxes-container">
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
-                </div>
                 <div className="border-overlay-line"></div>
             </div>
             <div className="my-info">

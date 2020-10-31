@@ -44,7 +44,7 @@ const Aboutme = () => {
 
     }, [])
     return (
-        <div className="about-me">
+        <div className="about-me" id="about-me">
             <div className="container">
                 {/* <div className="circle-overlay">
                     <div className="circle"></div>

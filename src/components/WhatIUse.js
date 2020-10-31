@@ -81,7 +81,7 @@ const WhatIUse = () => {
 
     }, [])
     return (
-        <div className="what-i-use">
+        <div className="what-i-use" id="what-i-use">
             <div className="container">
                 <div className="title-text">
                     <h3>What I Use</h3>
